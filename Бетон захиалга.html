@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бетон захиалга</title>
+    <link rel="stylesheet" href="js.js">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">
+                <img src="/images/102412993_113719433706011_5043582401262346430_n.jpg" alt="">
+
+            </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/home.html" class="navbar__links">Нүүр</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/groupiin tuhai.html" class="navbar__links">Группийн тухай</a>
+                </li>
+                <li class="navbar__item">
+                    <a  class="navbar__links">Үйл ажиллагааны чиглэл</a>
+                    <ul class="navbar__itemdrop">
+                        <li><a href="/3-1barilga.html">Барилга</a></li>
+                        <li><a href="/3-2beton_uildver.html">Бетон зуурмагийн үйлдвэр</a></li>
+                        <li><a href="/3-3heavy_machines.html">Хүнд машин механизм</a></li>
+                        <li><a href="/3-4road.html">Авто зам, замын бүтээн байгуулалт</a></li>
+                        <li><a href="/3-5uul_uurhai.html">Уул уурхай</a></li>
+                        <li><a href="/3-6uul_uurhain_operator.html">Уул уурхайн оператор</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a href="/4-1ajliin_bair.html" class="navbar__links">Мэдээлэл</a>
+                    <ul class="navbar__itemdrop">
+                        <li><a href="/4-1ajliin_bair.html">Ажлын байрны мэдээлэл</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__links">Худалдаа</a>
+                    <ul class="navbar__itemdrop">
+                        <li><a >Орон сууц</a></li>
+                        <li><a >Хүнд машин механизм</a></li>
+                        <li><a >Тос тосолгооны материал</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/Бетон захиалга.html" class="button">ЗАХИАЛГА</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<!-- section start -->
+<div class="container__body">
+    <div class="container__order">
+        <p>M150  = 190'000 төгрөг</p>
+        <p>M200 = 230'000 төгрөг</p> 
+        <p>M250 = 250'000 төгрөг</p> 
+        <p>M300 = 280'000 төгрөг</p> 
+        <p>M350 = 300'000 төгрөг</p> 
+        <p>M400 = 330'000 төгрөг</p> 
+        <p>M450 = 250'000 төгрөг</p> 
+    </div>
+    <div class="container__order">
+        
+        <div class="title-1">Бетон захиалга</div>
+        <form action="">
+            <div class="user-details">
+
+                <div class="input-box">
+                    <span class="details">Нэр</span>
+                    <input type="text" placeholder=" " required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Овог</span>
+                    <input type="text" placeholder=" " required>
+                </div>
+                <div class="input-box">
+                    <span class="details">И-мэйл</span>
+                    <input type="email" placeholder="example@email.com" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Утасны дугаар</span>
+                    <input type="number" placeholder="+976" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Хэзээ</span>
+                    <input type="date" placeholder="" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Хаана</span>
+                    <input type="text" placeholder="" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Хэдэн цагаас</span>
+                    <input type="time" placeholder="" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">МАРК</span>
+                    <select type="select" id ="mark">
+                        <option value="M150">M150</option>
+                        <option value="M200">M200</option>
+                        <option value="M250">M250</option>
+                        <option value="M300">M300</option>
+                        <option value="M350">M350</option>
+                        <option value="M400">M400</option>
+                        <option value="M450">M450</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <span class="details">Тоо хэмжээ</span>
+                    <input type="number" placeholder="куб" name="" id="too_hemjee" oninput="calculate()">
+                </div>
+                <div class="input-box">
+                    <span class="details">Үнэ</span>
+                    <input type="number" placeholder="төгрөг" name="" id="une">
+                </div>
+                <div class="input-box">
+                    <span class="details">Төсөл</span>
+                    <input type="text" placeholder=" " required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Бүтээц</span>
+                    <input type="text" placeholder=" " required>
+                </div>
+            </div>
+            <div class="order-btn">
+                <input type="submit" value="Захиалах">
+            </div>
+        </form>
+    </div>
+</div>
+<!-- section end -->
+<!-- footer start -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Групп</h4>
+                <ul>
+                    <li><a href="#">тухай</a></li>
+                    <li><a href="#">Бүтээн байгуулалт</a></li>
+                    <li><a href="#">Ажиллах хүч</a></li>
+                    <li><a href="#">Чанарын бодлого</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Үйлчилгээ</h4>
+                <ul>
+                    <li><a href="#">Бетон зуурмаг</a></li>
+                    <li><a href="#">Барилга</a></li>
+                    <li><a href="#">Хүнд машин, механизм</a></li>
+                    <li><a href="#">Уул уурхай</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Мэдээлэл</h4>
+                <ul>
+                    <li><a href="#">Нийтлэл</a></li>
+                    <li><a href="#">Ажлын байр</a></li>
+                    <li><a href="#">Төсөл</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Холбоо барих</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer end -->
+<script src = "/js.js"></script>
+</body>
+</html>
